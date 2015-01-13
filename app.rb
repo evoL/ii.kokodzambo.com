@@ -19,7 +19,7 @@ configure do
     host: ENV['MEMCACHIER_SERVERS'],
     username: ENV['MEMCACHIER_USERNAME'],
     password: ENV['MEMCACHIER_PASSWORD'],
-    expires_after: 1209600
+    expires_after: 3600
   )
   set :client, VirtualFS::Github.new(user: ENV['GITHUB_USER'], repo: ENV['GITHUB_REPO'], cache: cache)
 end
