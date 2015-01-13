@@ -1,0 +1,8 @@
+- entries.each do |category, names|
+  %dt= category
+  %dd
+    %ul.notes
+      - names.each do |name|
+        %li
+          %a{href: "/#{category}/#{name}"}
+            %em= name

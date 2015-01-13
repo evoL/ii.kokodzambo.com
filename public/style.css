@@ -1,0 +1,441 @@
+@charset "UTF-8";
+code[class^=language-] {
+  /* Comment */
+  /* Error */
+  /* Keyword */
+  /* Comment.Multiline */
+  /* Comment.Preproc */
+  /* Comment.Single */
+  /* Comment.Special */
+  /* Generic.Deleted */
+  /* Generic.Emph */
+  /* Generic.Error */
+  /* Generic.Heading */
+  /* Generic.Inserted */
+  /* Generic.Output */
+  /* Generic.Prompt */
+  /* Generic.Strong */
+  /* Generic.Subheading */
+  /* Generic.Traceback */
+  /* Keyword.Constant */
+  /* Keyword.Declaration */
+  /* Keyword.Namespace */
+  /* Keyword.Pseudo */
+  /* Keyword.Reserved */
+  /* Keyword.Type */
+  /* Literal.Number */
+  /* Literal.String */
+  /* Name.Attribute */
+  /* Name.Builtin */
+  /* Name.Class */
+  /* Name.Constant */
+  /* Name.Decorator */
+  /* Name.Exception */
+  /* Name.Function */
+  /* Name.Label */
+  /* Name.Namespace */
+  /* Name.Property */
+  /* Name.Tag */
+  /* Name.Variable */
+  /* Operator.Word */
+  /* Text.Whitespace */
+  /* Literal.Number.Float */
+  /* Literal.Number.Hex */
+  /* Literal.Number.Integer */
+  /* Literal.Number.Oct */
+  /* Literal.String.Backtick */
+  /* Literal.String.Char */
+  /* Literal.String.Doc */
+  /* Literal.String.Double */
+  /* Literal.String.Escape */
+  /* Literal.String.Heredoc */
+  /* Literal.String.Interpol */
+  /* Literal.String.Other */
+  /* Literal.String.Regex */
+  /* Literal.String.Single */
+  /* Literal.String.Symbol */
+  /* Name.Builtin.Pseudo */
+  /* Name.Variable.Class */
+  /* Name.Variable.Global */
+  /* Name.Variable.Instance */
+  /* Literal.Number.Integer.Long */ }
+  code[class^=language-] .hll {
+    background-color: #ffffcc; }
+  code[class^=language-] .c {
+    color: #888888; }
+  code[class^=language-] .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  code[class^=language-] .k {
+    color: #008800;
+    font-weight: bold; }
+  code[class^=language-] .cm {
+    color: #888888; }
+  code[class^=language-] .cp {
+    color: #cc0000;
+    font-weight: bold; }
+  code[class^=language-] .c1 {
+    color: #888888; }
+  code[class^=language-] .cs {
+    color: #cc0000;
+    font-weight: bold;
+    background-color: #fff0f0; }
+  code[class^=language-] .gd {
+    color: #000000;
+    background-color: #ffdddd; }
+  code[class^=language-] .ge {
+    font-style: italic; }
+  code[class^=language-] .gr {
+    color: #aa0000; }
+  code[class^=language-] .gh {
+    color: #303030; }
+  code[class^=language-] .gi {
+    color: #000000;
+    background-color: #ddffdd; }
+  code[class^=language-] .go {
+    color: #888888; }
+  code[class^=language-] .gp {
+    color: #555555; }
+  code[class^=language-] .gs {
+    font-weight: bold; }
+  code[class^=language-] .gu {
+    color: #606060; }
+  code[class^=language-] .gt {
+    color: #aa0000; }
+  code[class^=language-] .kc {
+    color: #008800;
+    font-weight: bold; }
+  code[class^=language-] .kd {
+    color: #008800;
+    font-weight: bold; }
+  code[class^=language-] .kn {
+    color: #008800;
+    font-weight: bold; }
+  code[class^=language-] .kp {
+    color: #008800; }
+  code[class^=language-] .kr {
+    color: #008800;
+    font-weight: bold; }
+  code[class^=language-] .kt {
+    color: #888888;
+    font-weight: bold; }
+  code[class^=language-] .m {
+    color: #0000DD;
+    font-weight: bold; }
+  code[class^=language-] .s, code[class^=language-] .s-Atom {
+    color: #dd2200;
+    background-color: #fff0f0; }
+  code[class^=language-] .na {
+    color: #336699; }
+  code[class^=language-] .nb {
+    color: #003388; }
+  code[class^=language-] .nc {
+    color: #bb0066;
+    font-weight: bold; }
+  code[class^=language-] .no {
+    color: #003366;
+    font-weight: bold; }
+  code[class^=language-] .nd {
+    color: #555555; }
+  code[class^=language-] .ne {
+    color: #bb0066;
+    font-weight: bold; }
+  code[class^=language-] .nf {
+    color: #0066bb;
+    font-weight: bold; }
+  code[class^=language-] .nl {
+    color: #336699;
+    font-style: italic; }
+  code[class^=language-] .nn {
+    color: #bb0066;
+    font-weight: bold; }
+  code[class^=language-] .py {
+    color: #336699;
+    font-weight: bold; }
+  code[class^=language-] .nt {
+    color: #bb0066;
+    font-weight: bold; }
+  code[class^=language-] .nv {
+    color: #336699; }
+  code[class^=language-] .ow {
+    color: #008800; }
+  code[class^=language-] .w {
+    color: #bbbbbb; }
+  code[class^=language-] .mf {
+    color: #0000DD;
+    font-weight: bold; }
+  code[class^=language-] .mh {
+    color: #0000DD;
+    font-weight: bold; }
+  code[class^=language-] .mi {
+    color: #0000DD;
+    font-weight: bold; }
+  code[class^=language-] .mo {
+    color: #0000DD;
+    font-weight: bold; }
+  code[class^=language-] .sb {
+    color: #dd2200;
+    background-color: #fff0f0; }
+  code[class^=language-] .sc {
+    color: #dd2200;
+    background-color: #fff0f0; }
+  code[class^=language-] .sd {
+    color: #dd2200;
+    background-color: #fff0f0; }
+  code[class^=language-] .s2 {
+    color: #dd2200;
+    background-color: #fff0f0; }
+  code[class^=language-] .se {
+    color: #0044dd;
+    background-color: #fff0f0; }
+  code[class^=language-] .sh {
+    color: #dd2200;
+    background-color: #fff0f0; }
+  code[class^=language-] .si {
+    color: #3333bb;
+    background-color: #fff0f0; }
+  code[class^=language-] .sx {
+    color: #22bb22;
+    background-color: #f0fff0; }
+  code[class^=language-] .sr {
+    color: #008800;
+    background-color: #fff0ff; }
+  code[class^=language-] .s1 {
+    color: #dd2200;
+    background-color: #fff0f0; }
+  code[class^=language-] .ss {
+    color: #aa6600;
+    background-color: #fff0f0; }
+  code[class^=language-] .bp {
+    color: #003388; }
+  code[class^=language-] .vc {
+    color: #336699; }
+  code[class^=language-] .vg {
+    color: #dd7700; }
+  code[class^=language-] .vi {
+    color: #3333bb; }
+  code[class^=language-] .il {
+    color: #0000DD;
+    font-weight: bold; }
+
+h1, h2, h3, p, ul, ol, li, dl, dt, dd, pre {
+  margin: 0;
+  padding: 0; }
+
+/* Apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*************************************** CLEARFIX*/
+/* For modern browsers */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+  zoom: 1; }
+
+/******************************************* MAIN */
+body {
+  background: #f1f1dc url(/groovepaper.png) repeat;
+  font-family: Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3b3131; }
+
+a:link,
+a:visited {
+  color: #46472b; }
+
+a:hover, a.current {
+  color: #b5b690; }
+
+h1 {
+  font-family: Exo;
+  font-weight: 200;
+  font-size: 2.5em;
+  line-height: 48px;
+  margin-bottom: 24px; }
+
+h2 {
+  font-size: 2em;
+  line-height: 48px; }
+
+h3 {
+  font-size: 1.5em;
+  line-height: 24px; }
+
+/*p {
+  margin-bottom: $lineheight;
+}*/
+p, pre, ul, ol {
+  margin: 24px 0; }
+
+li > ul, li > ol {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+li ol {
+  list-style-type: lower-alpha; }
+
+ul, ol {
+  margin-left: 1.2em; }
+
+ul.unstyled {
+  list-style: none;
+  margin: 0; }
+
+code {
+  background: #ffffff;
+  display: inline-block;
+  padding: 0 0.3em;
+  border: 1px solid #b5b690;
+  overflow: auto;
+  border-radius: 5px; }
+
+pre code {
+  display: block;
+  margin: -10px 0;
+  padding: 10px;
+  border-radius: 10px; }
+
+table {
+  border-collapse: collapse; }
+
+th, td {
+  padding: 0.3em 0.6em;
+  border: 1px solid #b5b690; }
+
+th {
+  background: #b5b690;
+  color: #fff; }
+
+/******************************************* LAYOUT */
+.container {
+  width: 960px;
+  margin: 48px auto; }
+
+.main, .sidebar {
+  float: left; }
+
+.main {
+  width: 75%; }
+
+.sidebar {
+  width: 25%; }
+
+/******************************************* SIDEBAR */
+.sidebar {
+  padding-right: 1em; }
+
+.sidebar .forks {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 0.5em; }
+
+.lectures dt {
+  color: #8f0853;
+  font-size: 1.125em;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.lectures dd {
+  margin-bottom: 24px; }
+
+.notes {
+  margin-top: 0; }
+
+.notes a {
+  display: block;
+  text-decoration: none; }
+
+.notes em {
+  font-style: normal; }
+
+.notes small {
+  display: block;
+  font-size: 0.625em; }
+
+/******************************************* MAIN */
+.main {
+  border-left: 1px solid #b5b690;
+  padding-left: 1em; }
+
+/******************************************* SPECIFIC */
+.special, .def, .example, .fact, .theorem, .lemma, .conc {
+  background: #fff;
+  padding: 10px 10px 10px 120px;
+  border: 1px solid #8f0853;
+  margin: 14px 0;
+  border-radius: 10px;
+  position: relative; }
+  .special:before, .def:before, .example:before, .fact:before, .theorem:before, .lemma:before, .conc:before {
+    position: absolute;
+    left: -1px;
+    top: 0;
+    bottom: 0;
+    width: 90px;
+    font-weight: bold;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; }
+
+.def {
+  border-color: #8f0853; }
+  .def:before {
+    content: 'Definicja';
+    background: #8f0853;
+    color: #fff; }
+
+.example {
+  border-color: #b5b690; }
+  .example:before {
+    content: 'Przykład';
+    background: #b5b690;
+    color: #fff; }
+
+.fact {
+  border-color: #46472b; }
+  .fact:before {
+    content: 'Fakt';
+    background: #46472b;
+    color: #fff; }
+
+.theorem {
+  border-color: #08870c; }
+  .theorem:before {
+    content: 'Twierdzenie';
+    background: #08870c;
+    color: #fff; }
+
+.lemma {
+  border-color: #a4a509; }
+  .lemma:before {
+    content: 'Lemat';
+    background: #a4a509;
+    color: #fff; }
+
+.conc {
+  border-color: #086587; }
+  .conc:before {
+    content: 'Wniosek';
+    background: #086587;
+    color: #fff; }
+
+div.def > :first-child, div.example > :first-child, div.fact > :first-child, div.theorem > :first-child, div.lemma > :first-child, div.conc > :first-child {
+  margin-top: 0; }
+div.def > :last-child, div.example > :last-child, div.fact > :last-child, div.theorem > :last-child, div.lemma > :last-child, div.conc > :last-child {
+  margin-bottom: 0; }
+
+ul.def, ul.fact, ul.example, ul.theorem, ul.lemma, ul.conc,
+ol.def, ol.fact, ol.example, ol.theorem, ol.lemma, ol.conc {
+  padding-left: 140px; }

@@ -1,0 +1,19 @@
+!!! 5
+%html
+  %head
+    %title
+      - if @title
+        = @title
+        \—
+      Notatki — Kokodżambo
+    %meta{charset: 'utf-8'}
+    %link{rel: 'stylesheet', type: 'text/css', href: 'http://fonts.googleapis.com/css?family=Exo:200&subset=latin,latin-ext'}
+    %link{rel: 'stylesheet', type: 'text/css', href: '/style.css'}
+    %script{type: 'text/javascript', src: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'}
+  %body
+    .container.cf
+      .sidebar
+        / %a.forks{:href => '/forks'} Notatki alternatywne
+        %dl.lectures= toc
+      .main
+        = yield
