@@ -3,6 +3,7 @@ require 'haml'
 require 'virtualfs'
 require 'dotenv'
 require 'mime/types'
+require 'pry' if settings.development?
 require_relative 'codehighlight'
 Dotenv.load
 
