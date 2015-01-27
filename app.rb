@@ -76,3 +76,7 @@ get '/*' do
     file.read
   end
 end
+
+not_found do
+  haml :'404'
+end
