@@ -21,7 +21,15 @@ configure do
     password: ENV['MEMCACHIER_PASSWORD'],
     expires_after: 3600
   )
-  set :client, VirtualFS::Github.new(user: ENV['GITHUB_USER'], repo: ENV['GITHUB_REPO'], cache: cache)
+  set :client, VirtualFS::Github.new(
+    user: ENV['GITHUB_USER'],
+    repo: ENV['GITHUB_REPO'],
+    authentication: {
+      client_id: ENV['GITHUB_CLIENT_ID'],
+      client_secret: ENV['GITHUB_CLIENT_SECRET']
+    },
+    cache: cache
+  )
 end
 
 helpers do
