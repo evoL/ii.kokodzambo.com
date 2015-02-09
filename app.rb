@@ -16,21 +16,27 @@ Tilt.prefer HighlightedKramdownTemplate
 def client; settings.client; end
 
 configure do
-  cache = VirtualFS::DalliCache.new(
-    host: ENV['MEMCACHIER_SERVERS'],
-    username: ENV['MEMCACHIER_USERNAME'],
-    password: ENV['MEMCACHIER_PASSWORD'],
-    expires_after: 3600
-  )
-  set :client, VirtualFS::Github.new(
-    user: ENV['GITHUB_USER'],
-    repo: ENV['GITHUB_REPO'],
-    authentication: {
-      client_id: ENV['GITHUB_CLIENT_ID'],
-      client_secret: ENV['GITHUB_CLIENT_SECRET']
-    },
-    cache: cache
-  )
+  if settings.production?
+    cache = VirtualFS::DalliCache.new(
+      host: ENV['MEMCACHIER_SERVERS'],
+      username: ENV['MEMCACHIER_USERNAME'],
+      password: ENV['MEMCACHIER_PASSWORD'],
+      expires_after: 3600
+    )
+    set :client, VirtualFS::Github.new(
+      user: ENV['GITHUB_USER'],
+      repo: ENV['GITHUB_REPO'],
+      authentication: {
+        client_id: ENV['GITHUB_CLIENT_ID'],
+        client_secret: ENV['GITHUB_CLIENT_SECRET']
+      },
+      cache: cache
+    )
+  else
+    set :client, VirtualFS::Local.new(
+      path: ENV['CONTENT_PATH']
+    )
+  end
 end
 
 helpers do
