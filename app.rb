@@ -3,6 +3,7 @@ require 'haml'
 require 'virtualfs'
 require 'dotenv'
 require 'rouge'
+require 'kramdown'
 require 'mime/types'
 require 'pry' if settings.development?
 Dotenv.load
