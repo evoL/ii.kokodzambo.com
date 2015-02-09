@@ -2,20 +2,16 @@ require 'sinatra'
 require 'haml'
 require 'virtualfs'
 require 'dotenv'
+require 'rouge'
 require 'mime/types'
 require 'pry' if settings.development?
-require_relative 'codehighlight'
 Dotenv.load
-
-module Sinatra
-  Tilt.register HighlightedKramdownTemplate, 'markdown', 'mkd', 'md'
-end
-
-Tilt.prefer HighlightedKramdownTemplate
 
 def client; settings.client; end
 
 configure do
+  set :markdown, syntax_highlighter: 'rouge'
+
   if settings.production?
     cache = VirtualFS::DalliCache.new(
       host: ENV['MEMCACHIER_SERVERS'],

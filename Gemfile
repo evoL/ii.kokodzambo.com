@@ -5,7 +5,7 @@ gem 'sinatra'
 gem 'haml'
 gem 'virtualfs'
 gem 'kramdown'
-gem 'pygments.rb'
+gem 'rouge'
 gem 'dotenv'
 gem 'mime-types'
 
